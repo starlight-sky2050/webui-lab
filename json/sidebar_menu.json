@@ -1,0 +1,16 @@
+[
+  {
+    "id": "assets",
+    "label": "我的倉庫",
+    "icon": "📦",
+    "title": "我的倉庫",
+    "description": "所有 3D 資產，井然有序。"
+  },
+  {
+    "id": "teams",
+    "label": "我的團隊",
+    "icon": "👥",
+    "title": "我的團隊",
+    "description": "與團隊共享的 3D 資產。"
+  }
+]

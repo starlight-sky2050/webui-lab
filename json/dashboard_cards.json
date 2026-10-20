@@ -1,0 +1,70 @@
+{
+  "assets": [
+    {
+      "id": "aster-scout",
+      "name": "Aster 探索者",
+      "tags": ["Character", "Rigged"],
+      "description": "適用於即時專案的模組化探索者角色，含完整骨架與材質。適用於即時專案的模組化探索者角色，含完整骨架與材質。適用於即時專案的模組化探索者角色，含完整骨架與材質。適用於即時專案的模組化探索者角色，含完整骨架與材質。適用於即時專案的模組化探索者角色，含完整骨架與材質。",
+      "owner": "林以安",
+      "license": "個人資產",
+      "scope": "personal",
+      "scene": "clay",
+      "specs": { "poly": 18420, "vertices": 9620, "texture": "4K PBR", "format": ".fbx" }
+    },
+    {
+      "id": "moss-shader",
+      "name": "Moss Surface Kit",
+      "tags": ["Shader", "Material"],
+      "description": "可調式苔蘚表面著色器，支援風化、濕潤與地形混合。",
+      "owner": "材質研究組",
+      "license": "團隊共享",
+      "scope": "team",
+      "scene": "forest",
+      "specs": { "poly": 2400, "vertices": 1260, "texture": "4K PBR", "format": ".blend" }
+    },
+    {
+      "id": "orbital-relay",
+      "name": "Orbital Relay 07",
+      "tags": ["Prop", "Sci-fi"],
+      "description": "低面數軌道通訊中繼站，包含模組化零件與 LOD。",
+      "owner": "林以安",
+      "license": "個人資產",
+      "scope": "personal",
+      "scene": "plum",
+      "specs": { "poly": 12860, "vertices": 7412, "texture": "2K PBR", "format": ".glb" }
+    },
+    {
+      "id": "kinetic-chair",
+      "name": "Kinetic Lounge Chair",
+      "tags": ["Furniture", "Design"],
+      "description": "曲面造型休閒椅，提供可直接用於展示的高解析模型。",
+      "owner": "產品視覺組",
+      "license": "團隊共享",
+      "scope": "team",
+      "scene": "cobalt",
+      "specs": { "poly": 32640, "vertices": 16802, "texture": "4K PBR", "format": ".fbx" }
+    },
+    {
+      "id": "desert-fox",
+      "name": "Desert Foxling",
+      "tags": ["Character", "Creature"],
+      "description": "風格化沙漠狐角色，含表情控制器與動畫測試姿勢。",
+      "owner": "林以安",
+      "license": "個人資產",
+      "scope": "personal",
+      "scene": "sand",
+      "specs": { "poly": 22180, "vertices": 11540, "texture": "4K PBR", "format": ".blend" }
+    },
+    {
+      "id": "fern-volume",
+      "name": "Fern Volume Scatter",
+      "tags": ["Shader", "Nature"],
+      "description": "可程序化生成蕨類群落的節點資產，快速建立林下層次。",
+      "owner": "環境藝術組",
+      "license": "團隊共享",
+      "scope": "team",
+      "scene": "moss",
+      "specs": { "poly": 8640, "vertices": 4520, "texture": "2K PBR", "format": ".glb" }
+    }
+  ]
+}

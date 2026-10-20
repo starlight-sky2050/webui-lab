@@ -1,0 +1,55 @@
+:root {
+    color-scheme: dark;
+    font-family: "Manrope", "Noto Sans TC", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    --page: #151715;
+    --panel: #1d201e;
+    --panel-raised: #242824;
+    --panel-soft: #202320;
+    --line: #303530;
+    --line-strong: #444a43;
+    --text: #f0f1e9;
+    --muted: #929990;
+    --subtle: #697169;
+    --accent: #d2fa72;
+    --accent-ink: #202519;
+    --warm: #f2a17d;
+    --mono: "DM Mono", monospace;
+    --radius: 8px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--page);
+    color: var(--text);
+}
+
+button,
+input {
+    color: inherit;
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--accent-ink);
+}

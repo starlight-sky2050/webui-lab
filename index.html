@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#151715">
+    <meta name="description" content="管理、搜尋與檢視你的 3D 資產。">
+    <title>FORM / 3D 資產管理</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <script defer src="js/app.js"></script>
 </head>
 <body>
-    
-</body>
+    <header class="topbar">
+        <a class="brand" href="./" aria-label="FORM 首頁">
+            <span class="brand-mark" aria-hidden="true">F</span>
+            <span class="brand-name">FORM<span class="brand-slash">/</span></span>
+        </a>
+        <label class="search-field">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="asset-search" type="search" placeholder="搜尋資產、標籤或擁有者" autocomplete="off" aria-label="搜尋資產">
+            <kbd>⌘ K</kbd>
+        </label>
+        <button class="icon-button settings-button" type="button" aria-label="設定" title="設定">⚙</button>
+        <button class="icon-button notification-button" type="button" aria-label="通知" title="通知">
+            <span aria-hidden="true">♧</span><span class="notification-dot" aria-hidden="true"></span>
+        </button>
+        <button class="profile-badge" type="button" aria-label="使用者：林以安">
+            <span class="avatar">林</span><span class="profile-name">林以安</span><span class="profile-chevron" aria-hidden="true">⌄</span>
+        </button>
+    </header>
+
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="主要導覽">
+            <p class="sidebar-caption">工作區</p>
+            <nav id="sidebar-menu" class="sidebar-menu" aria-label="資產工作區"></nav>
+            <div class="sidebar-footer">
+                <span class="storage-label">儲存空間</span>
+                <div class="storage-meter" aria-label="已使用 68%"><span></span></div>
+                <span class="storage-detail">68 GB <span>/ 100 GB</span></span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="page-heading" aria-labelledby="page-title">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-mark"></span> 資產資料庫 <span class="eyebrow-divider">/</span> 2026</p>
+                    <h1 id="page-title"><span id="page-title-text">我的倉庫</span><span class="heading-period">.</span></h1>
+                    <p class="page-description">所有 3D 資產，井然有序。</p>
+                </div>
+                <button class="primary-button" type="button"><span aria-hidden="true">＋</span> 新增資產</button>
+            </section>
+
+            <section class="asset-section" aria-label="3D 資產清單">
+                <div class="section-toolbar">
+                    <div class="results-label"><span class="results-count" id="asset-count">載入中</span><span> 個資產</span></div>
+                    <div class="view-controls">
+                        <span class="sort-label">排序</span>
+                        <button class="sort-button" type="button">最近更新 <span aria-hidden="true">⌄</span></button>
+                        <button class="view-toggle" type="button" aria-label="網格檢視" title="網格檢視">▦</button>
+                    </div>
+                </div>
+                <div class="asset-grid" id="asset-grid" aria-live="polite" aria-busy="true"></div>
+                <p class="load-error" id="load-error" role="status" hidden></p>
+            </section>
+            <footer class="page-footer"><span>FORM ASSET LIBRARY</span><span>LOCAL WORKSPACE <i></i></span></footer>
+        </main>
+    </div>
+ </body>
 </html>
